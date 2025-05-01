@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Special Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- The Card (Click to open) -->
+  <div class="card" id="card" onclick="openCard()">
+    <h1>💌 Tap to Open</h1>
+  </div>
+
+  <!-- Proposal Section (Appears after card opens) -->
+  <div class="proposal hidden" id="proposal">
+    <h2>Hey [Dear],</h2>
+    <p>You light up my world.I imagine you everyday. I think i am in love you with. I dont know how to confess my feeling but here i am. Will you be mine forever?</p>
+    <button onclick="acceptProposal()">Yes, I will! 💖</button>
+  </div>
+
+  <!-- Next Button Section (Appears after fireworks) -->
+  <div class="next-step hidden" id="next">
+    <p>i am really glad you accepted ittt!!!!</p>
+    <button onclick="showInsta()">Next ➡️</button>
+  </div>
+
+  <!-- Instagram Link Section -->
+  <div class="insta-link hidden" id="insta">
+    <p>🎉 lets talk more about it. Here is my ID: <span onclick="goToInsta()">pe_g_s</span></p>
+  </div>
+
+  <!-- Fireworks Effect -->
+  <div class="fireworks hidden" id="fireworks"></div>
+
+  <!-- Music (Automatically plays when the page loads) -->
+  <audio id="bgMusic" src="song.mp3.mp3" autoplay loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
